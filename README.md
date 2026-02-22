@@ -298,11 +298,6 @@ Use ReVanced for it and only allow viewing top posts of everyday as your default
 Guide:  
 https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md
 
-### End Result
-
-![Final Setup]
-
----
 
 ## Pornography
 
