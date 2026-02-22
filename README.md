@@ -247,11 +247,11 @@ For YouTube, import these in:
 
 **Settings > ReVanced > Misc > Import**
 
+```json
 "change_start_page": "subscriptions",
 "change_start_page_always": true,
 "custom_filter": true,
-"custom_filter_strings": "video_lockup$relatedH
-subscriptions_channel_bar",
+"custom_filter_strings": "video_lockup$relatedH\nsubscriptions_channel_bar",
 "disable_resuming_shorts_player": true,
 "disable_signin_to_tv_popup": true,
 "end_screen_suggested_video": true,
@@ -278,6 +278,7 @@ subscriptions_channel_bar",
 "miniplayer_type": "minimal",
 "shorts_disable_background_playback": true,
 "shorts_player_type": "regular_player"
+```
 
 
 ---
