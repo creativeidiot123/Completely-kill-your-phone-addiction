@@ -1,6 +1,7 @@
 # A Comprehensive Guide to a High-Friction Digital Environment
 
 ![High Friction Setup]
+https://github.com/creativeidiot123/Completely-kill-your-phone-addiction/blob/main/kill-the-access-to-new-content-and-stop-doom-scrolling-v0-ylisxrl7gj0f1%20(1).webp
 
 This guide outlines a robust method to lock down your device, creating significant "friction" to prevent bypassing productivity blocks. The core principle is to combine the rigid, scheduled blocking of Google Family Link with the flexible, daily management of a dedicated blocker app like Mindful.
 
