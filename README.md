@@ -16,7 +16,9 @@ This phase is best performed on a PC for ease of copying and pasting complex pas
 ### Download Initial Apps
 
 On your phone download:
-
+- **Mindful:**  
+  https://github.com/akaMrNagar/Mindful
+  
 - **The specified Blocker App:**  
   https://github.com/creativeidiot123/Lockey/releases  
   This will be used to store your emergency password.
