@@ -301,3 +301,13 @@ Alternatively for Reddit you can also use https://play.google.com/store/apps/det
 ## Pornography
 
 Bulldog blocker is the only app i couldnt override, it works on all the apps and basically runs an AI that actively monitors your content (its all offline so dont worry about privacy).
+
+## Student
+
+If you are a student I have two recommendations for you. 
+
+https://github.com/creativeidiot123/LibreTube Is a libretube fork, i have removed search icon from it so you are stuck with your subscriptions, download a normal libretube client from fdroid, subscribe to your study youtubers, then export the subscriptions and import in our fork, mark our fork as usable as unlimited apps in family link so you can study from youtube while normal youtube is blocked
+
+AnkiBlocker
+
+Anki is a repetition app, alot of students use it, this blocker uses it to trigger app blocks. read more here https://github.com/creativeidiot123/Blocker
