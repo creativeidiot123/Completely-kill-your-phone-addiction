@@ -17,9 +17,6 @@ This phase is best performed on a PC for ease of copying and pasting complex pas
 
 On your phone download:
 
-- **Mindful** (You will configure app blocking with this later).  
-  https://github.com/akaMrNagar/Mindful  
-
 - **The specified Blocker App:**  
   https://github.com/creativeidiot123/Lockey/releases  
   This will be used to store your emergency password.
@@ -32,7 +29,7 @@ Do not save that password in any password manager or your browser's autosave fea
 
 Generate a highly complex and random password. It should be impossible to memorize.
 
-Example:
+Example: b$ca{76r>t<3.w7yrqrt6dab?rtfg3iqrdasa
 
 
 ### Secure and "Forget" the Password
