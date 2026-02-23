@@ -298,6 +298,8 @@ Use ReVanced for it and only allow viewing top posts of everyday as your default
 Guide:  
 https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md
 
+Alternatively for Reddit you can also use https://play.google.com/store/apps/details?id=allen.town.focus.red&hl=en_IN
+
 
 ## Pornography
 
