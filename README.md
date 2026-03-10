@@ -24,9 +24,7 @@ On your phone download:
 
 ### Secure and "Forget" the Password
 
-- **The specified Blocker App:**  
-  https://github.com/creativeidiot123/Lockey/releases  
-  This will be used to store your emergency password.
+Download lockey app above 
 
 Generate a highly complex and random password. It should be impossible to memorize.
 
