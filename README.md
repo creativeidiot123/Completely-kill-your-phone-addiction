@@ -96,7 +96,7 @@ Open Destination, then re-add your Google and device accounts.
 1. Install NextDNS.
 2. Set it up.
 3. Keep the NextDNS password the same as your Destination password (harder to tamper with).
-4. Setup adblocking and porn blocking in nextdns, Copy your DNS link/profile endpoint.
+4. Setup adblocking and porn blocking and bypass blocking in nextdns, Copy your DNS link/profile endpoint.
 5. Paste that DNS link into Destination.
 
 ### Option B: VPN
