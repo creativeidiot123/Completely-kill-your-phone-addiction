@@ -179,6 +179,12 @@ The goal is to remove the most addictive, low-value features like:
 
 ## For YouTube & Instagram (Removing Shorts/Reels)
 
+Easy way: download https://github.com/libre-tube/LibreTube and set it up so theres only susbcribed channels and no related videos in your feed and below the video player.
+
+OR
+
+For nerds (the hard but better way)
+
 Consider using a tool like ReVanced Manager.
 
 Guide:  
@@ -220,8 +226,8 @@ Enable:
 
 Next:
 
-- Put a daily timer on reels scrolling in Mindful  
-- Put an overall timer on Instagram usage in Family Link  
+- Put a daily timer on reels scrolling in Mindful  https://github.com/akaMrNagar/Mindful
+- Put an overall hourly and daily limit on Instagram usage in destination.
 
 Do the same for YouTube.
 
@@ -269,18 +275,16 @@ For YouTube, import these in:
 
 Avoid the official Reddit app, which is designed for maximum engagement with video feeds and algorithmic content.
 
-Instead, use a third-party client.
+Instead, use a third-party client. like this https://play.google.com/store/apps/details?id=allen.town.focus.red&hl=en_IN
 
-An excellent and popular choice is Sync for Reddit.
+or An excellent and popular choice is Sync for Reddit. 
+Guide:  
+https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md
 
 These clients typically offer a cleaner, more text-focused interface, remove promoted posts, and give you far more control over the content you see, making for a much less addictive experience.
 
 Use ReVanced for it and only allow viewing top posts of everyday as your default page.
 
-Guide:  
-https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md
-
-Alternatively for Reddit you can also use https://play.google.com/store/apps/details?id=allen.town.focus.red&hl=en_IN
 
 
 ## Pornography
