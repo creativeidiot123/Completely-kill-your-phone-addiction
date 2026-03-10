@@ -3,182 +3,167 @@
 
 ![High Friction Setup](https://raw.githubusercontent.com/creativeidiot123/Completely-kill-your-phone-addiction/main/kill-the-access-to-new-content-and-stop-doom-scrolling-v0-ylisxrl7gj0f1%20(1).webp)
 
-This guide outlines a robust method to lock down your device, creating significant "friction" to prevent bypassing productivity blocks. The core principle is to combine the rigid, scheduled blocking of Google Family Link with the flexible, daily management of a dedicated blocker app like Mindful.
+This guide outlines a robust method to lock down your device, creating significant "friction" to prevent bypassing productivity blocks.
 
-When properly implemented, this system is extremely resilient and designed to withstand nearly all common bypass attempts, including booting into Safe Mode, changing the device time, or uninstalling key applications without authorization from the Parent Account.
+When properly implemented, this system is extremely resilient and designed to withstand nearly all common bypass attempts, including booting into Safe Mode, changing the device time, or uninstalling key applications without authorization.
 
 ---
 
-## Phase 1: Preparation and Account Creation
-
-This phase is best performed on a PC for ease of copying and pasting complex passwords.
+## Phase 1: Preparation
 
 ### Download Initial Apps
 
 On your phone download:
-- **Mindful:**  
-  https://github.com/akaMrNagar/Mindful
+- **Destination:**  
+  https://github.com/creativeidiot123/destination
   
 - **The specified Blocker App:**  
   https://github.com/creativeidiot123/Lockey/releases  
   This will be used to store your emergency password.
 
-### Create the "Parent" Account
 
-Open a web browser and create a brand new Google Account. This account will act as the administrator or "Parent" for your device.
+### Secure and "Forget" the Password
 
-Do not save that password in any password manager or your browser's autosave feature, and do not add any phone number or recovery emails to this new mail.
+- **The specified Blocker App:**  
+  https://github.com/creativeidiot123/Lockey/releases  
+  This will be used to store your emergency password.
 
 Generate a highly complex and random password. It should be impossible to memorize.
 
 Example: b$ca{76r>t<3.w7yrqrt6dab?rtfg3iqrdasa
 
-
-### Secure and "Forget" the Password
-
 **Crucial Step:** You must not have easy access to this password.
 
-Entrust it to a reliable person (like a family member or trusted friend). Send it to them and then delete all records of it from your own devices and message history. The goal is that you cannot retrieve it on your own.
+Entrust it to a reliable person (like a family member or trusted friend) and put it in lockey app. Send it to them and then delete all records of it from your own devices and message history. The goal is that you cannot retrieve it on your own.
 
-Put it in the Lockey app provided above, and put a 350 character protection minimum.
+Put it in the Lockey app provided above, and put a 450+ character protection minimum.
 
-### Enable Two-Factor Authentication (2FA)
 
-On your phone, download and set up Google Authenticator.
+# Destination Setup Guide
 
-In the settings for your new "Parent" account, enable 2FA and link it to any Authenticator app on your phone. This adds a critical layer of security to the parent account so you cannot just login to any other device with it.
+## Overview
+This guide covers complete setup of Destination: installation, device-owner provisioning, permissions, DNS/VPN hardening, rule design, schedules, limits, and final lock protection.
 
----
-
-## Phase 2: Linking Your Device with Family Link
-
-Now, you will configure your phone so that the new "Parent" account supervises your primary account.
-
-### Enable Parental Controls
-
-Go to your phone's:
-
-**Settings > Digital Wellbeing & parental controls**
-
-Select the option to set up parental controls.
-
-### Assign Roles
-
-When prompted, designate your phone as a Child's device.
-
-Your primary, day-to-day Google account will now be the Child Account.
-
-Follow the on-screen instructions to link it to the Parent Account you created in Phase 1. You will need to sign in with the Parent Account's credentials one time for this setup.
-
-### Note on Multiple Email Accounts
-
-Since your device will now be locked to a single primary Google Account, the Gmail app will only show emails for that account.
-
-To manage emails from your other accounts, you will need to download a third-party email client (such as K-9 Mail or FairEmail) from the Play Store.
-
-If you have any third party apps, either convert them to email and password accounts or login before removing those accounts.
+## Prerequisites
+- Android device
+- Latest Destination APK
+- `adb` installed on your computer
+- USB debugging enabled
+- A strong password
 
 ---
 
-## Phase 3: Configuring Parent Account Permissions
+## Step 1: Install the APK
+Download and install the latest Destination release APK.
 
-Log in to the Google Family Link website using your Parent Account credentials. Select your device from the dashboard to manage its settings.
+## Step 2: Remove Accounts Temporarily
+Go to:
 
-The strategy here is to use Family Link for its most rigid features, while leaving flexible blocking to other apps.
+`Settings -> Passwords & Accounts`
 
-### Content Restrictions
+Remove all accounts (Google, etc.). You will re-add them after setup.
 
-Set everything to "Allow all." This includes app installations, websites, etc.
+Verify no accounts remain:
+```bash
+adb shell dumpsys account
+```
 
-### Device Settings to Block  
-(Available in device settings in Family Link on the Parent side)
+If any app still shows accounts, uninstall that app temporarily.
 
-- Block Developer Options  
-  This is critical to prevent bypasses using ADB (Android Debug Bridge).
+## Step 3: Set Device Owner
+```bash
+adb shell dpm set-device-owner com.ankit.destination/.admin.FocusDeviceAdminReceiver
+```
 
-- Disable Changes to Time & Date  
-  Prevents manipulating time to get around time-based limits.
+## Step 4: Grant Usage Access
+```bash
+adb shell cmd appops set com.ankit.destination GET_USAGE_STATS allow
+```
 
-- Enable "Allow installation from unknown sources"  
-  This allows you to sideload apps if needed.
+## Step 5: Grant Accessibility
+```bash
+adb shell settings put secure enabled_accessibility_services com.ankit.destination/com.ankit.destination.YourAccessibilityService
+adb shell settings put secure accessibility_enabled 1
+```
+
+## Step 6: Finish Base Setup
+Open Destination, then re-add your Google and device accounts.
+
+---
+# In app settings:
+
+## Network Protection Setup (Choose One)
+
+### Option A: DNS (Recommended)
+1. Install NextDNS.
+2. Set it up.
+3. Keep the NextDNS password the same as your Destination password (harder to tamper with).
+4. Setup adblocking and porn blocking in nextdns, Copy your DNS link/profile endpoint.
+5. Paste that DNS link into Destination.
+
+### Option B: VPN
+1. Add the package name of your VPN app in Destination.
+2. Configure Destination so internet outside approved VPN/DNS apps does not work.
 
 ---
 
-## Configure Downtime (For Night Blocks)
-
-It is recommended to use Family Link's Downtime feature only for a strict night-time block (e.g., 10 PM to 7 AM).
-
-Enable a schedule for these hours.
-
-By default, all apps will be blocked during Downtime.
-
-Go through the app list and mark only the absolute essentials (like Phone, Messages, Maps, Uber, Payment, Clock) as "Always Allowed."
-
-Leave all other apps in their default, restricted state.
-
-Crucially, this includes:
-
-- Browsers  
-- Social media  
-- The Blocker App holding your password  
-- Your 2FA app (e.g., Google Authenticator)
-
-Blocking these last two prevents any attempts to access the Parent Account and disable the system during the block.
+## Enable All Protection Toggles
+Enable all major security restrictions, including:
+- Date & time restriction
+- Debugging/developer settings protection
+- User creation restriction
+- Other available hardening toggles in Destination
 
 ---
 
-## App Time Limits
+## Rules Configuration
 
-While Family Link offers app time limits, we will use Mindful for this purpose instead.
+### Allowlist
+Put apps here that should remain usable even during strict “all apps blocked” schedules.
 
-Mindful is less rigid and better for daily management with its emergency usage and upcoming session block features.
+### Blocklist
+Put apps here that should be blocked permanently.
 
-However, if you want daily time limits in a rigid way then use Family Link's daily app time limits.
-
----
-
-## Phase 4: The Final Lock-In
-
-This phase makes the system difficult to undo.
-
-### Secure the Parent Password
-
-Open the Blocker App you downloaded earlier.
-
-Copy and paste the long, complex Parent Account password into this app.
-
-Set the app's unlock mechanism to something extremely time-consuming, such as requiring a 300 to 400 character phrase to be typed perfectly.
-
-This ensures that accessing the password in an emergency is a deliberate 10 to 20 minute process.
-
-### Sign Out Everywhere
-
-On your PC and any other device, sign out of the Parent Account.
-
-Do not save the password in any browser or password manager.
-
-The only place this password should now exist is with your trusted person and inside the heavily locked Blocker App on your phone.
-
-If you delete the locker app by accident your password is gone.
+### Uninstall Protection
+Use this for blocker/security apps you never want removed, even if someone tries bypass methods.
 
 ---
 
-## Set Up Mindful for Daily Management
+## Groups, Schedules, and Limits
 
-Now, open the Mindful app.
+### Group Settings
+Keep **schedule groups** and **limit groups** separate for easier maintenance and cleaner management.
 
-It is highly recommended for:
+### Schedules
+Create your blocking schedules first (focus windows, night block, etc.).
 
-- Daily App Time Limits (e.g., 1 hour of social media per day)  
-- Session Blocks for focused work or study periods  
+### Individual Time Limits
+Then set per-app usage limits.
 
-Use Mindful's features for your flexible, day-to-day productivity needs.
+### Individual App Settings
+Finally, apply app-level rules and exceptions.
 
-Enable its strictness features so you cannot uninstall it.
+---
 
-Your system is now complete.
+## Final Security Step
+1. Set your Destination password.
+2. Store it in Lockey.
+3. Take a backup from lockey app which is encrypted so your password is safe but not readable.
+4. Forget the password.
+5. Turn protection ON.
 
-Family Link provides the unbreakable, foundational rules for night-time, while Mindful provides the flexible limits and blocks needed for daytime productivity.
+---
+
+## Recommendations from the Creator
+- Make night block a strict all-app block.
+- Search ChatGPT for package names of clone/third-party clients of Instagram, Reddit, YouTube, etc.
+- Add those package names to Blocklist to prevent bypass when limits are reached.
+- Report any issues on GitHub.
+
+---
+
+## Done
+Your Destination setup is now complete and hardened.
 
 ---
 
