@@ -124,6 +124,7 @@ Put apps here that should be blocked permanently.
 
 ### Uninstall Protection
 Use this for blocker/security apps you never want removed, even if someone tries bypass methods.
+If you have installed my ankiblocker app then enable this here, or if you use any other blocker then enable it here as well.
 
 ---
 
