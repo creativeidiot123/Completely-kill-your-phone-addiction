@@ -17,7 +17,7 @@ On your phone download:
 - **Destination:**  
   https://github.com/creativeidiot123/destination
   
-- **The specified Blocker App:**  
+- **The specified locker App:**  
   https://github.com/creativeidiot123/Lockey/releases  
   This will be used to store your emergency password.
 
