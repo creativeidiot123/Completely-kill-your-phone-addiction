@@ -120,7 +120,9 @@ Enable all major security restrictions, including:
 Put apps here that should remain usable even during strict “all apps blocked” schedules.
 
 ### Blocklist
-Put apps here that should be blocked permanently. There's a advanced blocklist section as well to block forks and similar 3rd party apps so you cant block one app and install similar app to use.
+Put apps here that should be blocked permanently. 
+
+For Nerds: There's also a advanced blocklist section as well to block forks and similar 3rd party apps so you cant block one app and install similar app to use.
 
 ### Uninstall Protection
 Use this for blocker/security apps you never want removed, even if someone tries bypass methods.
