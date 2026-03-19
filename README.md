@@ -203,37 +203,6 @@ Similar patches can sometimes be applied to other apps to hide features like Ins
 
 Use the Reel block feature of Mindful to put a time limit on scrolling.
 
-If your attempt is to kill infinite scrolling, make sure to:
-
-- Unfollow and unsubscribe from useless creators that create mindless content or trends  
-- Support niche creators who do this for hobby and family and friends  
-- Unfollow mainstream creators, influencers, meme channels, fact channels, big YouTubers like MrBeast etc.  
-- Follow niche or hobby-based creators that upload maybe once a month  
-
-### Instagram Patch Using ReVanced
-
-Download:  
-https://github.com/AbdurazaaqMohammed/AntiSplit-M  
-
-Use it to convert the Instagram APKM bundle to APK to load in ReVanced Manager.
-
-Enable:
-
-- Hiding ads  
-- Following-only feed  
-- Hiding suggested content  
-- Hide stories (Optional)  
-- Hide explore page  
-- Hide navigation buttons  
-- Hide reels  
-
-Next:
-
-- Put a daily timer on reels scrolling in Mindful  https://github.com/akaMrNagar/Mindful
-- Put an overall hourly and daily limit on Instagram usage in destination.
-
-Do the same for YouTube.
-
 For YouTube, import these in:
 
 **Settings > ReVanced > Misc > Import**
@@ -272,14 +241,55 @@ For YouTube, import these in:
 ```
 
 
+If your attempt is to kill infinite scrolling, make sure to:
+
+- Unfollow and unsubscribe from useless creators that create mindless content or trends  
+- Support niche creators who do this for hobby and family and friends  
+- Unfollow mainstream creators, influencers, meme channels, fact channels, big YouTubers like MrBeast etc.  
+- Follow niche or hobby-based creators that upload maybe once a month  
+
+
+### Instagram Patch Using ReVanced
+
+Easy way: download InstaPrime https://t.me/InstaPrimeOfficials and set it up so theres only followed pages and Hiding suggested content, Hide reels, disable Scrolling in reels is enabled.
+
+OR
+
+For nerds (the hard but better way)
+
+Download:  
+https://github.com/AbdurazaaqMohammed/AntiSplit-M  
+Guide:  
+https://github.com/KobeW50/ReVanced-Documentation/blob/main/YT-ReVanced-Guide.md#before-you-begin
+
+Use it to convert the Instagram APKM bundle to APK to load in ReVanced Manager.
+
+Enable:
+
+- Hiding ads  
+- Following-only feed  
+- Hiding suggested content  
+- Hide stories (Optional)  
+- Hide explore page  
+- Hide navigation buttons  
+- Hide reels  
+
+Next:
+
+- Put a daily timer on reels scrolling in Mindful  https://github.com/akaMrNagar/Mindful
+- Put an overall hourly and daily limit on Instagram usage in destination.
+
+Do the same for YouTube.
+
 ---
 
 ## For Reddit
 
 Avoid the official Reddit app, which is designed for maximum engagement with video feeds and algorithmic content.
 
-Instead, use a third-party client. like this https://play.google.com/store/apps/details?id=allen.town.focus.red&hl=en_IN
+Instead, use a third-party client. like this https://play.google.com/store/apps/details?id=allen.town.focus.red&hl=en_IN or Infinity+ or redreader
 
+Hard way for nerds:
 or An excellent and popular choice is Sync for Reddit. 
 Guide:  
 https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md
