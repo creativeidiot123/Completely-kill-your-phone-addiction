@@ -117,7 +117,7 @@ Enable all major security restrictions, including:
 ## Rules Configuration
 
 ### Allowlist
-Put apps here that should remain usable even during strict “all apps blocked” schedules.
+Put apps here that should remain usable even during strict “all apps blocked” schedules and focus pomodoro sessions.
 
 ### Blocklist
 Put apps here that should be blocked permanently. 
