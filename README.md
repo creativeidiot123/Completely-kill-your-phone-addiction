@@ -1,4 +1,4 @@
-# A Comprehensive Guide to a High-Friction Digital Environment
+# Nuke your Social Media and Pornography usage.
 
 
 ![High Friction Setup](https://raw.githubusercontent.com/creativeidiot123/Completely-kill-your-phone-addiction/main/kill-the-access-to-new-content-and-stop-doom-scrolling-v0-ylisxrl7gj0f1%20(1).webp)
