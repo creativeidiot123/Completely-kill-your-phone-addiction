@@ -290,7 +290,9 @@ Use ReVanced for it and only allow viewing top posts of everyday as your default
 
 ## Pornography
 
-Bulldog blocker is the only app i couldnt override, it works on all the apps and basically runs an AI that actively monitors your content (its all offline so dont worry about privacy).
+Bulldog blocker is the only app i couldnt override, it works on all the apps and basically runs an AI that actively monitors your content (its all offline so dont worry about privacy). 
+
+Add this into uninstall protection apps in destination rules tab.
 
 ## Student
 
@@ -301,3 +303,6 @@ https://github.com/creativeidiot123/LibreTube Is a libretube fork, i have remove
 AnkiBlocker
 
 Anki is a repetition app, alot of students use it, this blocker uses it to trigger app blocks. read more here https://github.com/creativeidiot123/Blocker
+
+Also add this into uninstall protection apps in destination rules tab.
+
