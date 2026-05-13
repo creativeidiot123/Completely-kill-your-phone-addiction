@@ -51,41 +51,63 @@ This guide covers complete setup of Destination: installation, device-owner prov
 
 ---
 
-## Step 1: Install the APK
-Download and install the latest Destination release APK.
+## 🚀 Setup (ADB Required): Takes 3 minutes max
 
-## Step 2: Remove Accounts Temporarily
-Go to:
+> Device Owner access requires ADB. No factory reset needed — just temporarily remove your accounts.
 
-`Settings -> Passwords & Accounts`
+### Step 1 — Install the APK
 
-Remove all accounts (Google, etc.). You will re-add them after setup.
+Download and install the [latest release APK](../../releases/latest).
+
+### Step 2 — Remove Accounts Temporarily
+
+Go to **Settings → Passwords & Accounts** and remove all accounts (Google, etc.). You'll re-add them right after.
 
 Verify no accounts remain:
 ```bash
 adb shell dumpsys account
 ```
 
-If any app still shows accounts, uninstall that app temporarily.
+> If any apps still show accounts, uninstall them temporarily.
 
-## Step 3: Set Device Owner
+### Step 3 — Set Device Owner
+
 ```bash
 adb shell dpm set-device-owner com.ankit.destination/.admin.FocusDeviceAdminReceiver
 ```
 
-## Step 4: Grant Usage Access
+### Step 4 — Allow Restricted Settings
+
+```bash
+adb shell cmd appops set com.ankit.destination ACCESS_RESTRICTED_SETTINGS allow
+```
+
+### Step 5 — Grant Usage Access
+
 ```bash
 adb shell cmd appops set com.ankit.destination GET_USAGE_STATS allow
 ```
 
-## Step 5: Grant Accessibility
+### Step 6 — Grant Accessibility
+
 ```bash
-adb shell settings put secure enabled_accessibility_services com.ankit.destination/com.ankit.destination.YourAccessibilityService
+adb shell settings put secure enabled_accessibility_services com.ankit.destination/.enforce.FocusEnforcementService
+```
+
+```bash
 adb shell settings put secure accessibility_enabled 1
 ```
 
-## Step 6: Finish Base Setup
-Open Destination, then re-add your Google and device accounts.
+### Step 7 — Grant Notification access
+
+```bash
+adb shell cmd notification allow_listener com.ankit.destination/com.ankit.destination.music.MusicPlaybackNotificationListenerService
+```
+
+### Step 8 — You're done
+
+Open Destination, then re-add your Google and device accounts. That's it.
+
 
 ---
 # In app settings:
