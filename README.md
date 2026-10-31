@@ -135,6 +135,10 @@ Use ReVanced for it and only allow viewing top posts of everyday as your default
 
 
 
+## Cooldown before you can change rules
+
+If your problem is that you open the blocker and switch it off yourself, [Ripple](https://ripplefocus.github.io/) adds a 15 minute cooldown before any rule can be changed or protection removed. It can block only YouTube Shorts, Instagram Reels and WeChat Channels inside the apps, has uninstall protection that is enabled on the phone without a computer, and counts time from device uptime so changing the clock does not end a block. There is also an iPhone version (iOS 16+) that uses Apple's Screen Time API. Free, offline, no account.
+
 ## Pornography
 
 Bulldog blocker is the only app i couldnt override, it works on all the apps and basically runs an AI that actively monitors your content (its all offline so dont worry about privacy). 
